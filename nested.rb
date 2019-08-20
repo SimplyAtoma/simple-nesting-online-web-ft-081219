@@ -79,10 +79,12 @@ def adding_matz
         :dennis_ritchie => {
           :known_for => "Unix",
           :languages => ["C"]
+        },
+        :yukihiro_matsumoto => {
+          :known_for => "Ruby",
+          :languages => ["LISP", "C"]
         }
      }
-  programmer_hash[:yukihiro_matsumoto] = { :known_for => "Ruby",:languages => ["LISP", "C"]}
-  programmer_hash
     
 end
 
@@ -124,5 +126,5 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
-  programmer_hash[:dennis_ritchie][:languages][1] = "Assembly"
+  programmer_hash[:dennis_ritchie][:languages] << "Assembly"
 end
